@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL-Library|Win32">
+      <Configuration>DLL-Library</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL-Library|x64">
+      <Configuration>DLL-Library</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dc4cbb6f-5ca6-46cf-979e-fbca83f5c2a2}</ProjectGuid>
+    <RootNamespace>NBAModelSCNE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Library|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Library|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Library|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Library|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Library|x64'">
+    <TargetName>NBAModel</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Library|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)NBA_Model_SCNE\src;$(SolutionDir)NBA_Model_SCNE\include;$(SolutionDir)NBA_Model_SCNE\include\zlib;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex\Shaders;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex\Shaders\Compiled;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);$(SolutionDir)NBA_Model_SCNE\lib\zlib.lib;$(SolutionDir)NBA_Model_SCNE\lib\debug\DirectXTex.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)NBA_Model_SCNE\src;$(SolutionDir)NBA_Model_SCNE\include;$(SolutionDir)NBA_Model_SCNE\include\zlib;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex\Shaders;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex\Shaders\Compiled;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(SolutionDir)NBA_Model_SCNE\lib\zlib.lib;$(SolutionDir)NBA_Model_SCNE\lib\release\DirectXTex.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Library|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)NBA_Model_SCNE\src;$(SolutionDir)NBA_Model_SCNE\include;$(SolutionDir)NBA_Model_SCNE\include\zlib;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex\Shaders;$(SolutionDir)NBA_Model_SCNE\include\DirectXTex\Shaders\Compiled;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(SolutionDir)NBA_Model_SCNE\lib\zlib.lib;$(SolutionDir)NBA_Model_SCNE\lib\release\DirectXTex.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="include\DirectXTex\BC.cpp" />
+    <ClCompile Include="include\DirectXTex\BC4BC5.cpp" />
+    <ClCompile Include="include\DirectXTex\BC6HBC7.cpp" />
+    <ClCompile Include="include\DirectXTex\BCDirectCompute.cpp" />
+    <ClCompile Include="include\hash\hash.cpp" />
+    <ClCompile Include="include\memoryreader.cpp" />
+    <ClCompile Include="include\meshstructs.cpp" />
+    <ClCompile Include="include\MikkGen.cpp" />
+    <ClCompile Include="include\mikktspace.c" />
+    <ClCompile Include="src\armature\armature.cpp" />
+    <ClCompile Include="src\armature\bone_reader.cpp" />
+    <ClCompile Include="src\bin_codec.cpp" />
+    <ClCompile Include="src\bin_format.cpp" />
+    <ClCompile Include="src\cereal\bin_json.cpp" />
+    <ClCompile Include="src\cereal\effectserializer.cpp" />
+    <ClCompile Include="src\cereal\materialserializer.cpp" />
+    <ClCompile Include="src\cereal\mesh_json.cpp" />
+    <ClCompile Include="src\cereal\modelserializer.cpp" />
+    <ClCompile Include="src\cereal\objectserializer.cpp" />
+    <ClCompile Include="src\cereal\sceneserializer.cpp" />
+    <ClCompile Include="src\cereal\skeletonserializer.cpp" />
+    <ClCompile Include="src\cereal\skin_json.cpp" />
+    <ClCompile Include="src\cereal\textureserializer.cpp" />
+    <ClCompile Include="src\common.cpp" />
+    <ClCompile Include="src\common_json.cpp" />
+    <ClCompile Include="src\datastream.cpp" />
+    <ClCompile Include="src\dll\dllmain.cpp" />
+    <ClCompile Include="src\dll\interface_export.cpp" />
+    <ClCompile Include="src\dll\interface_mesh.cpp" />
+    <ClCompile Include="src\dll\interface_save.cpp" />
+    <ClCompile Include="src\dll\pch.cpp" />
+    <ClCompile Include="src\databuffer.cpp" />
+    <ClCompile Include="src\material\effect.cpp" />
+    <ClCompile Include="src\material\material.cpp" />
+    <ClCompile Include="src\material\material_reader.cpp" />
+    <ClCompile Include="src\meshprimitive.cpp" />
+    <ClCompile Include="src\modelreader.cpp" />
+    <ClCompile Include="src\nbamodel.cpp" />
+    <ClCompile Include="src\nbascene.cpp" />
+    <ClCompile Include="src\oodle_loader.cpp" />
+    <ClCompile Include="src\scenefile.cpp" />
+    <ClCompile Include="src\scenereader.cpp" />
+    <ClCompile Include="src\sceneupdate.cpp" />
+    <ClCompile Include="src\texture\texture.cpp" />
+    <ClCompile Include="src\texture\texture_compress.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\DirectXTex\BC.h" />
+    <ClInclude Include="include\DirectXTex\BCDirectCompute.h" />
+    <ClInclude Include="include\DirectXTex\d3dx12.h" />
+    <ClInclude Include="include\DirectXTex\DDS.h" />
+    <ClInclude Include="include\DirectXTex\DirectXTex.h" />
+    <ClInclude Include="include\DirectXTex\DirectXTexP.h" />
+    <ClInclude Include="include\DirectXTex\filters.h" />
+    <ClInclude Include="include\DirectXTex\scoped.h" />
+    <ClInclude Include="include\gzip\compress.hpp" />
+    <ClInclude Include="include\gzip\config.hpp" />
+    <ClInclude Include="include\gzip\decompress.hpp" />
+    <ClInclude Include="include\gzip\utils.hpp" />
+    <ClInclude Include="include\gzip\version.hpp" />
+    <ClInclude Include="include\hash\hash.h" />
+    <ClInclude Include="include\json.hpp" />
+    <ClInclude Include="include\memoryreader.h" />
+    <ClInclude Include="include\meshstructs.h" />
+    <ClInclude Include="include\MikkGen.h" />
+    <ClInclude Include="include\mikktspace.h" />
+    <ClInclude Include="include\zlib\crc32.h" />
+    <ClInclude Include="include\zlib\deflate.h" />
+    <ClInclude Include="include\zlib\gzguts.h" />
+    <ClInclude Include="include\zlib\inffast.h" />
+    <ClInclude Include="include\zlib\inffixed.h" />
+    <ClInclude Include="include\zlib\inflate.h" />
+    <ClInclude Include="include\zlib\inftrees.h" />
+    <ClInclude Include="include\zlib\trees.h" />
+    <ClInclude Include="include\zlib\zconf.h" />
+    <ClInclude Include="include\zlib\zlib.h" />
+    <ClInclude Include="include\zlib\zutil.h" />
+    <ClInclude Include="src\armature\armature.h" />
+    <ClInclude Include="src\armature\bone_reader.h" />
+    <ClInclude Include="src\bin_codec.h" />
+    <ClInclude Include="src\bin_format.h" />
+    <ClInclude Include="src\cereal\bin_json.h" />
+    <ClInclude Include="src\cereal\effectserializer.h" />
+    <ClInclude Include="src\cereal\genericserializer.h" />
+    <ClInclude Include="src\cereal\materialserializer.h" />
+    <ClInclude Include="src\cereal\mesh_json.h" />
+    <ClInclude Include="src\cereal\modelserializer.h" />
+    <ClInclude Include="src\cereal\objectserializer.h" />
+    <ClInclude Include="src\cereal\sceneserializer.h" />
+    <ClInclude Include="src\cereal\skeletonserializer.h" />
+    <ClInclude Include="src\cereal\skin_json.h" />
+    <ClInclude Include="src\cereal\textureserializer.h" />
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\common_json.h" />
+    <ClInclude Include="src\datastream.h" />
+    <ClInclude Include="src\dll\framework.h" />
+    <ClInclude Include="src\dll\interface_export.h" />
+    <ClInclude Include="src\dll\interface_mesh.h" />
+    <ClInclude Include="src\dll\interface_save.h" />
+    <ClInclude Include="src\dll\pch.h" />
+    <ClInclude Include="src\databuffer.h" />
+    <ClInclude Include="src\material\effect.h" />
+    <ClInclude Include="src\material\material.h" />
+    <ClInclude Include="src\material\material_reader.h" />
+    <ClInclude Include="src\meshprimitive.h" />
+    <ClInclude Include="src\modelreader.h" />
+    <ClInclude Include="src\morphs\debug_morphs.h" />
+    <ClInclude Include="src\nbamodel.h" />
+    <ClInclude Include="src\nbascene.h" />
+    <ClInclude Include="src\oodle_loader.h" />
+    <ClInclude Include="src\scenefile.h" />
+    <ClInclude Include="src\scenereader.h" />
+    <ClInclude Include="src\sceneupdate.h" />
+    <ClInclude Include="src\texture\texture.h" />
+    <ClInclude Include="src\texture\texture_compress.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\DirectXTex\DirectXTex.inl" />
+    <None Include="src\nbascene" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

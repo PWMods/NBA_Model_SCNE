@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{c22eb227-0948-4ccd-9325-9a9f1f72366d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA">
+      <UniqueIdentifier>{1e0071e9-4f81-431c-bba1-698faa7d4f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{ee5ce1da-590d-4e08-9f0a-c22f71e76965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Mesh">
+      <UniqueIdentifier>{ff8a4c3f-9a47-4f5c-8c72-0bf9696ba771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{93ad3bb5-2cd7-49c3-9c1a-9a057d7705c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\GZIP">
+      <UniqueIdentifier>{d89dc1c5-f743-416c-be83-07e24e034748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\ZLIB">
+      <UniqueIdentifier>{b6a2158f-aa5f-4db8-a401-1e1f178ce5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Reader">
+      <UniqueIdentifier>{ece8f578-cdfc-4fc9-ba53-20b640e9f73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Scene">
+      <UniqueIdentifier>{e07c9b01-58b8-48a3-bfac-fc5ccb2cba1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PyInterface">
+      <UniqueIdentifier>{5544f610-5d32-450f-ba39-196489defd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Codec">
+      <UniqueIdentifier>{1bfcf1cd-a86f-4063-a884-1c328d9fefe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Cereal">
+      <UniqueIdentifier>{1852e3ef-a29d-4160-ab72-aa8e5fe9de9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Inject">
+      <UniqueIdentifier>{226f31be-1237-462c-b245-17d883e1b445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\MikkT">
+      <UniqueIdentifier>{5b64f551-c57d-4424-99b3-d3285b1cdb31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Material">
+      <UniqueIdentifier>{99ea061d-b343-4b08-b864-f7512c8a58cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Hash">
+      <UniqueIdentifier>{516c8141-ce86-493f-8491-4c989705e5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Texture">
+      <UniqueIdentifier>{4667490e-7180-486b-912d-a54fd7b5ffc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\DirectXTex">
+      <UniqueIdentifier>{fb0ddcfc-64bc-4806-aa42-3a41ed4103a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Armature">
+      <UniqueIdentifier>{c11fc3b6-5b44-4aca-a9c3-93f4eddfa5dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Cereal\Binary">
+      <UniqueIdentifier>{ba57cb98-6789-454a-a129-a33daa0cb74a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NBA\Morphs">
+      <UniqueIdentifier>{36bc14f8-52b4-413a-a335-afe6f15e5db6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\memoryreader.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\databuffer.cpp">
+      <Filter>NBA\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="include\meshstructs.cpp">
+      <Filter>NBA\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dll\pch.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dll\dllmain.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastream.cpp">
+      <Filter>NBA\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\meshprimitive.cpp">
+      <Filter>NBA\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modelreader.cpp">
+      <Filter>NBA\Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenereader.cpp">
+      <Filter>NBA\Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nbascene.cpp">
+      <Filter>NBA\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenefile.cpp">
+      <Filter>NBA\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nbamodel.cpp">
+      <Filter>NBA\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dll\interface_save.cpp">
+      <Filter>PyInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dll\interface_mesh.cpp">
+      <Filter>PyInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin_codec.cpp">
+      <Filter>NBA\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin_format.cpp">
+      <Filter>NBA\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\modelserializer.cpp">
+      <Filter>NBA\Cereal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\sceneserializer.cpp">
+      <Filter>NBA\Cereal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dll\interface_export.cpp">
+      <Filter>PyInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sceneupdate.cpp">
+      <Filter>NBA\Inject</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MikkGen.cpp">
+      <Filter>Library\MikkT</Filter>
+    </ClCompile>
+    <ClCompile Include="include\mikktspace.c">
+      <Filter>Library\MikkT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\material\material_reader.cpp">
+      <Filter>NBA\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\material\material.cpp">
+      <Filter>NBA\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common_json.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\material\effect.cpp">
+      <Filter>NBA\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="include\hash\hash.cpp">
+      <Filter>Library\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\objectserializer.cpp">
+      <Filter>NBA\Cereal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\materialserializer.cpp">
+      <Filter>NBA\Cereal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\effectserializer.cpp">
+      <Filter>NBA\Cereal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\textureserializer.cpp">
+      <Filter>NBA\Cereal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\texture\texture_compress.cpp">
+      <Filter>NBA\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\texture\texture.cpp">
+      <Filter>NBA\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DirectXTex\BC.cpp">
+      <Filter>Library\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DirectXTex\BC4BC5.cpp">
+      <Filter>Library\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DirectXTex\BC6HBC7.cpp">
+      <Filter>Library\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DirectXTex\BCDirectCompute.cpp">
+      <Filter>Library\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\armature\armature.cpp">
+      <Filter>NBA\Armature</Filter>
+    </ClCompile>
+    <ClCompile Include="src\armature\bone_reader.cpp">
+      <Filter>NBA\Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\skeletonserializer.cpp">
+      <Filter>NBA\Cereal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\mesh_json.cpp">
+      <Filter>NBA\Cereal\Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\skin_json.cpp">
+      <Filter>NBA\Cereal\Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cereal\bin_json.cpp">
+      <Filter>NBA\Cereal\Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oodle_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\memoryreader.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json.hpp">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\databuffer.h">
+      <Filter>NBA\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\meshstructs.h">
+      <Filter>NBA\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dll\pch.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dll\framework.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\decompress.hpp">
+      <Filter>Library\GZIP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\utils.hpp">
+      <Filter>Library\GZIP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\compress.hpp">
+      <Filter>Library\GZIP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\config.hpp">
+      <Filter>Library\GZIP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\inffast.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\inffixed.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\inflate.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\inftrees.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\trees.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\zutil.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\crc32.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\deflate.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\gzguts.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\zlib.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib\zconf.h">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastream.h">
+      <Filter>NBA\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\version.hpp">
+      <Filter>Library\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\meshprimitive.h">
+      <Filter>NBA\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modelreader.h">
+      <Filter>NBA\Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenereader.h">
+      <Filter>NBA\Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenefile.h">
+      <Filter>NBA\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nbamodel.h">
+      <Filter>NBA\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nbascene.h">
+      <Filter>NBA\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dll\interface_mesh.h">
+      <Filter>PyInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dll\interface_save.h">
+      <Filter>PyInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bin_codec.h">
+      <Filter>NBA\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bin_format.h">
+      <Filter>NBA\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\modelserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\sceneserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dll\interface_export.h">
+      <Filter>PyInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sceneupdate.h">
+      <Filter>NBA\Inject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MikkGen.h">
+      <Filter>Library\MikkT</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mikktspace.h">
+      <Filter>Library\MikkT</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\genericserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\material\material_reader.h">
+      <Filter>NBA\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="src\material\material.h">
+      <Filter>NBA\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common_json.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\material\effect.h">
+      <Filter>NBA\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hash\hash.h">
+      <Filter>Library\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\objectserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\materialserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\effectserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\textureserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\texture\texture_compress.h">
+      <Filter>NBA\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\texture\texture.h">
+      <Filter>NBA\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\BC.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\BCDirectCompute.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\d3dx12.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\DDS.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\DirectXTex.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\DirectXTexP.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\filters.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectXTex\scoped.h">
+      <Filter>Library\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\armature\armature.h">
+      <Filter>NBA\Armature</Filter>
+    </ClInclude>
+    <ClInclude Include="src\armature\bone_reader.h">
+      <Filter>NBA\Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\skeletonserializer.h">
+      <Filter>NBA\Cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\mesh_json.h">
+      <Filter>NBA\Cereal\Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\skin_json.h">
+      <Filter>NBA\Cereal\Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cereal\bin_json.h">
+      <Filter>NBA\Cereal\Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\morphs\debug_morphs.h">
+      <Filter>NBA\Morphs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oodle_loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\nbascene">
+      <Filter>NBA\Scene</Filter>
+    </None>
+    <None Include="include\DirectXTex\DirectXTex.inl">
+      <Filter>Library\DirectXTex</Filter>
+    </None>
+  </ItemGroup>
+</Project>
