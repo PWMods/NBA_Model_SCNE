@@ -1,4 +1,4 @@
-// File object and container class for all .scene data. Parses and extrapolates CNBAScene from given JSON file path.
+﻿// File object and container class for all .scene data. Parses and extrapolates CNBAScene from given JSON file path.
 
 #include <scenefile.h>
 #pragma once
@@ -45,5 +45,13 @@ private:
     std::vector<int> m_vertexMap; // holds vertex index id
 private:
     void updateSceneFile();
+    void encodeOctahedralNormals(const std::vector<float>& normals, std::vector<float>& encoded);
+
+    // ✓ NEW: Split index buffer methods
+    void rebuildSplitIndexBuffers();
+    void updateNormalIndexBuffer();
+    void updateTangentIndexBuffer();
+    std::string incrementHash(const std::string& filename);
+    std::map<std::string, std::string> m_updatedBuffers;  // ✓ ADD THIS LINE
 };
 

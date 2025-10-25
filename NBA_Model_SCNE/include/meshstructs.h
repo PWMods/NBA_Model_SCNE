@@ -1,4 +1,4 @@
-/* Generic 3D structs and handlers */
+﻿/* Generic 3D structs and handlers */
 
 #include <vector>
 #include <string>
@@ -233,6 +233,15 @@ struct Mesh
 	// Set to 3 for XYZ format, 4 for XYZW format
 	// This prevents vertex data from being scrambled during alignment
 	int vertexComponents = 3;
+
+	// ✓ NEW: Split index buffer support
+	bool hasSplitIndices = false;
+	std::vector<uint16_t> normalIndices;
+	std::vector<uint16_t> tangentIndices;
+	std::vector<float> uniqueNormals;
+	std::vector<float> uniqueTangents;
+	void* normalIndexRef = nullptr;
+	void* tangentIndexRef = nullptr;
 
 	// NEW: Extracted 3-component data for Blender interface
 	// These are populated by interface functions and persist for Blender to read

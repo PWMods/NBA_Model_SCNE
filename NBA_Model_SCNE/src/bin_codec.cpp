@@ -20,6 +20,7 @@ BinaryCodec::BinaryCodec(const std::string& encode_fmt, const std::string& data_
 void 
 BinaryCodec::registerTypes()
 {
+    m_map["R21G21B22"] = std::make_unique<R21G21B22>();
     m_map["R10G10B10A2"]  = std::make_unique<R10G10B10A2>();
     m_map["R32G32B32A32"] = std::make_unique<R32G32B32A32>();
     m_map["R32G32B32"]    = std::make_unique<R32G32B32>();
@@ -33,6 +34,8 @@ BinaryCodec::registerTypes()
     m_map["R8G8B8"]       = std::make_unique<R8G8B8>();
     m_map["R8G8"]         = std::make_unique<R8G8>();
     m_map["R8"]           = std::make_unique<R8>();
+    m_map["R10G10B10"] = std::make_unique<R10G10B10>();
+    m_map["R11G11B10"] = std::make_unique<R11G11B10>();
 }
 
 void

@@ -1,4 +1,4 @@
-/* Stores special model attributes and child Meshes for model object.
+﻿/* Stores special model attributes and child Meshes for model object.
    Extrapolates mesh data from given JSON container. */
 
 #include <nbamodel.h>
@@ -33,6 +33,12 @@ private:
 	void readVertexStream(JSON& obj);
 	void readIndexBuffer(JSON& obj);
 	void readMtxWeightBuffer(JSON& obj);
+	void decodeOctahedralNormals(CDataBuffer* tanBf, Mesh& mesh);
+
+	// ✓ NEW: Split index buffer methods
+	void readNormalIndexBuffer(JSON& obj);
+	void readTangentIndexBuffer(JSON& obj);
+	void expandSplitAttributes(Mesh& mesh);
 
 private:
 	CDataBuffer* findDataBuffer(const char* id);
