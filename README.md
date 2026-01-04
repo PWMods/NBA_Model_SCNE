@@ -19,3 +19,5 @@ This is an early WIP C++ library designed to read, decode, and unpack `.scne` fi
 ### Integration with Blender
 
 After building the project, you can use CTypes to create Python bindings that allow Blender to read NBA2K scene files through this library.
+
+This code is open to free use as long as it is shared with the NBA 2K Communit as well as proper credit to Hanleys & RipZz are included on releases
